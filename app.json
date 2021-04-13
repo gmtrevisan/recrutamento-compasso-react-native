@@ -1,0 +1,12 @@
+{
+  "name": "recrumento-compasso-react-native",
+  "displayName": "recrumento-compasso-react-native",
+  "expo": {
+    "name": "recrumento-compasso-react-native",
+    "slug": "recrumento-compasso-react-native",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
