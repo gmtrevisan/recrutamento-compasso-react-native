@@ -1,7 +1,7 @@
 import * as actions from './actions';
 import { News, NewsState } from './types';
 
-const initialState: NewsState = {
+export const initialState: NewsState = {
   loading: false,
   error: false,
   news: [],
@@ -31,7 +31,7 @@ const newsReducer = (state = initialState, action: any):NewsState => {
         ...state,
         loading: false,
         error: false,
-        news: [...state.news, ...sanitizeData(action.response.response.docs)],
+        news: [...state.news, ...sanitizeData(action.response)],
       };
     case actions.fetchNewsErrorAction().type:
       return {

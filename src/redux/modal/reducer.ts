@@ -1,7 +1,7 @@
 import * as actions from './actions';
 import { ModalState } from './types';
 
-const initialState: ModalState = {
+export const initialState: ModalState = {
   open: false,
   news: {
     _id: '',

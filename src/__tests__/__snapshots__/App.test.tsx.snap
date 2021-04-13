@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.test.tsx render buttons 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingTop": 22,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#480087",
+          "borderBottomWidth": 5,
+          "borderColor": "#FFB1A3",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "opacity": 1,
+          "paddingBottom": 20,
+          "paddingTop": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text
+        selected={true}
+        style={
+          Array [
+            Object {
+              "color": "#FFB1A3",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Ciência
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#480087",
+          "borderBottomWidth": 5,
+          "borderColor": "#663a8c",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "opacity": 1,
+          "paddingBottom": 20,
+          "paddingTop": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text
+        selected={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFF",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Tecnologia
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+          "paddingLeft": 20,
+          "paddingRight": 20,
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "opacity": 1,
+          "paddingBottom": 10,
+          "paddingTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "lineHeight": 20,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Erro ao carregar, espere alguns segundos e tente novamente.
+      </Text>
+    </View>
+  </View>
+</View>
+`;

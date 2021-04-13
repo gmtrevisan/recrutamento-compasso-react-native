@@ -9,12 +9,12 @@ describe('NewsDetails.test.tsx', () => {
   const mockModalState = {
     open: true,
     news: {
-        _id: 'IdTest',
-        abstract: 'AbstracTest',
-        web_url: 'WebUrlTest',
-        headline: { 
-            main: 'MainTest',
-        } 
+      _id: 'IdTest',
+      abstract: 'AbstracTest',
+      web_url: 'WebUrlTest',
+      headline: { 
+        main: 'MainTest',
+      } 
     }
   };
 

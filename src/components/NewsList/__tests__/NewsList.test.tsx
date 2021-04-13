@@ -5,7 +5,7 @@ import { NewsList } from '../NewsList';
 import * as newsActions from './../../../redux/news/actions';
 import * as modalActions from './../../../redux/modal/actions';
 
-describe('NewsDetails.test.tsx', () => {
+describe('NewsList.test.tsx', () => {
   const news01 = {
     _id: '123',
     headline: {

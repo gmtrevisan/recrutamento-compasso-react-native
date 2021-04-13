@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import styled from 'styled-components/native';
 import { Provider } from 'react-redux';
@@ -8,7 +8,6 @@ import { store } from './redux/store';
 import { NewsDetails } from './components/NewsDetails/NewsDetails';
 
 export const App = () => {
-  const [filter, setFilter] = useState('"Technology" "Science"');
   return (
     <Provider store={store}>
       <Container>

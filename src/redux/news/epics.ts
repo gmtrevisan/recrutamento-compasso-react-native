@@ -18,8 +18,8 @@ export const fetchNewsEpic = (action$, state$, { ajax }) => (
   action$.pipe(
     ofType(actions.fetchNewsAction().type),
     mergeMap(() => ajax(fetchNewsAjax(state$)).pipe(
-    mergeMap((response) => of(
-      actions.fetchNewsSuccessAction(response.response),
+    mergeMap((response: any) => of(
+      actions.fetchNewsSuccessAction(response.response.response.docs),
     )),
     catchError(() => of(
       actions.fetchNewsErrorAction(),
