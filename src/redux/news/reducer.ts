@@ -10,7 +10,7 @@ export const initialState: NewsState = {
 };
 
 export const sanitizeData = (news: Array<News>) => {
-  return news.map(({ _id, abstract, web_url, headline: { main } }) => ({ _id, abstract, web_url, headline: { main } }));
+  return news.map(({ _id, abstract, web_url, headline: { main }, multimedia = [] }) => ({ _id, abstract, web_url, headline: { main }, multimedia }));
 }
 
 const newsReducer = (state = initialState, action: any):NewsState => {

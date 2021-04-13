@@ -23,6 +23,22 @@ describe('News.reducer.test.tsx', () => {
       web_url: 'WebUrl',
       abstract: 'Abstract',
       extraField: 'extraField',
+      multimedia: [],
+    };
+    const news02 = {
+      _id: '122',
+      headline: {
+        main: 'NewsTest2'
+      },
+      web_url: 'WebUrl',
+      abstract: 'Abstract',
+      extraField: 'extraField',
+      multimedia: [
+        {
+          subtype: 'thumbnail',
+          url: 'url',
+        }
+      ],
     };
     const news01Sanitize = {
       _id: '123',
@@ -31,9 +47,24 @@ describe('News.reducer.test.tsx', () => {
       },
       web_url: 'WebUrl',
       abstract: 'Abstract',
+      multimedia: [],
     };
-    const response = [news01]; 
-    expect(modalReducer(undefined, actions.fetchNewsSuccessAction(response))).toEqual({ ...initialState, news: [news01Sanitize] });
+    const news02Sanitize = {
+      _id: '122',
+      headline: {
+        main: 'NewsTest2'
+      },
+      web_url: 'WebUrl',
+      abstract: 'Abstract',
+      multimedia: [
+        {
+          subtype: 'thumbnail',
+          url: 'url',
+        }
+      ],
+    };
+    const response = [news01, news02]; 
+    expect(modalReducer(undefined, actions.fetchNewsSuccessAction(response))).toEqual({ ...initialState, news: [news01Sanitize, news02Sanitize] });
   });
 
   test('fetchNewsErrorAction', () => {

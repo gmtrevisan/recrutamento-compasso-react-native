@@ -1,16 +1,12 @@
 import React, { useEffect } from 'react';
-import { FlatList, RefreshControl } from 'react-native';
+import { FlatList, RefreshControl, Image } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { apiPageLimit } from '../../constants';
-import { News } from '../../redux/news/types';
-import { Button, ErrorContainer, Item, ButtonLabel, ItemLabel, LoadingMore } from './styles';
+import { News, NewsMultimedia } from '../../redux/news/types';
+import { Button, ErrorContainer, Item, ButtonLabel, ItemLabel, LoadingMore, ImageContainer } from './styles';
 import { ListItem } from './types';
 import * as newsActions from './../../redux/news/actions';
 import * as modalActions from './../../redux/modal/actions';
-
-export const sanitizeData = (news: Array<News>) => {
-  return news.map(({ _id, headline: { main } }) => ({ _id, headline: { main } }));
-}
 
 export const NewsList = () => {
   const dispatch = useDispatch();
@@ -49,9 +45,11 @@ export const NewsList = () => {
   )
 
   const renderItem = ({ item }:ListItem) => {
-    const { headline: { main } } = item;
+    const { headline: { main }, multimedia } = item;
+    const thumbnail = multimedia.find((media:NewsMultimedia) => media.subtype === 'thumbnail');
     return (
       <Item onPress={() => handleDetails(item)}>
+        {!!thumbnail && (<ImageContainer><Image style={{ width: 75, height: 75 }} source={{ uri: `https://www.nytimes.com/${thumbnail.url}` }} /></ImageContainer>)}
         <ItemLabel>{main}</ItemLabel>
       </Item>
     );
@@ -66,6 +64,7 @@ export const NewsList = () => {
       onEndReached={handleLoadMore}
       onEndReachedThreshold={0.1}
       ListFooterComponent={renderFooter}
+      testID="FlatList"
     />
   )
 

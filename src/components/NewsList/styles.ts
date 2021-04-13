@@ -8,11 +8,21 @@ export const Item = styled.TouchableOpacity`
   paddingRight: 20px;
   borderBottomWidth: 1px;
   borderBottomColor: #CDCDCD;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
 `;
 
 export const ItemLabel = styled.Text`
+  flex: 1;
   color: #000;
   text-align: left;
+  marginLeft: auto;
+`;
+
+export const ImageContainer = styled.View`
+  width: 75px;
+  marginRight: 20px;
 `;
 
 export const ErrorContainer = styled.View`

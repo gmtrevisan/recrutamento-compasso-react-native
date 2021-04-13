@@ -14,7 +14,8 @@ describe('NewsDetails.test.tsx', () => {
       web_url: 'WebUrlTest',
       headline: { 
         main: 'MainTest',
-      } 
+      },
+      multimedia: [],
     }
   };
 

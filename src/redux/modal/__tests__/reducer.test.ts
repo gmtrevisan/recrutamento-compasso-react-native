@@ -18,7 +18,8 @@ describe('Modal.reducer.test.tsx', () => {
       web_url: 'WebUrlTest',
       headline: { 
         main: 'MainTest',
-      } 
+      },
+      multimedia: [],
     };
     expect(modalReducer(undefined, actions.setModalNewsAction(data))).toEqual({ ...initialState, news: data });
   });
