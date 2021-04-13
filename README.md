@@ -22,6 +22,6 @@ Executa a aplicação em modo de desenvolvimento.<br />
 
 Executa a aplicação em modo de desenvolvimento e abre o aplicativo no emulador Android.
 
-### `yar test --coverage`
+### `yarn test --coverage`
 
 Executa os teste e apresenta cobertura.<br />
