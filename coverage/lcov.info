@@ -387,7 +387,7 @@ DA:48,1
 DA:53,35
 LF:12
 LH:12
-BRDA:13,0,0,0
+BRDA:13,0,0,1
 BRDA:16,1,0,26
 BRDA:17,2,0,1
 BRDA:17,2,1,2
@@ -397,7 +397,7 @@ BRDA:17,2,4,1
 BRDA:17,2,5,1
 BRDA:17,2,6,35
 BRF:9
-BRH:8
+BRH:9
 end_of_record
 TN:
 SF:src\redux\news\types.ts

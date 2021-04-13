@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618338240270" clover="3.2.0">
-  <project timestamp="1618338240270" name="All files">
-    <metrics statements="128" coveredstatements="128" conditionals="29" coveredconditionals="28" methods="50" coveredmethods="50" elements="207" coveredelements="206" complexity="0" loc="128" ncloc="128" packages="7" files="17" classes="17"/>
+<coverage generated="1618338809595" clover="3.2.0">
+  <project timestamp="1618338809595" name="All files">
+    <metrics statements="128" coveredstatements="128" conditionals="29" coveredconditionals="29" methods="50" coveredmethods="50" elements="207" coveredelements="207" complexity="0" loc="128" ncloc="128" packages="7" files="17" classes="17"/>
     <package name="src">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="C:\Users\Gustavo\Documents\repos\recrutamento-compasso-react-native\src\App.tsx">
@@ -152,7 +152,7 @@
       </file>
     </package>
     <package name="src.redux.news">
-      <metrics statements="36" coveredstatements="36" conditionals="9" coveredconditionals="8" methods="20" coveredmethods="20"/>
+      <metrics statements="36" coveredstatements="36" conditionals="9" coveredconditionals="9" methods="20" coveredmethods="20"/>
       <file name="actions.ts" path="C:\Users\Gustavo\Documents\repos\recrutamento-compasso-react-native\src\redux\news\actions.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="3" count="55" type="stmt"/>
@@ -184,10 +184,10 @@
         <line num="49" count="1" type="stmt"/>
       </file>
       <file name="reducer.ts" path="C:\Users\Gustavo\Documents\repos\recrutamento-compasso-react-native\src\redux\news\reducer.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="9" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <metrics statements="12" coveredstatements="12" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
         <line num="4" count="6" type="stmt"/>
         <line num="12" count="6" type="stmt"/>
-        <line num="13" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="16" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="17" count="43" type="cond" truecount="7" falsecount="0"/>
         <line num="19" count="1" type="stmt"/>

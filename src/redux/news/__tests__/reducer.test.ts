@@ -23,7 +23,6 @@ describe('News.reducer.test.tsx', () => {
       web_url: 'WebUrl',
       abstract: 'Abstract',
       extraField: 'extraField',
-      multimedia: [],
     };
     const news02 = {
       _id: '122',
